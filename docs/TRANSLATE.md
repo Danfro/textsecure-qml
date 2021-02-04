@@ -8,7 +8,8 @@ The following translation dependencies are required:
 sudo apt-get install gettext
 ```
 
-Once you finished translating, test the strings. For testing set up  development enviroment as above and run
+Once you finished translating, test the strings. For testing set up development enviroment as above, change into the `axolotl-web` subfolder and run
+* `npm install` (only needed the first time to install core-js package)
 * `npm run translate-extract` extracting the language strings. This updates only the pot file
 * `npm run translate-update` for updating all the translation files
 * `npm run translate-compile` for updating the json file used by axolotl-web. Without that you don't see any results
